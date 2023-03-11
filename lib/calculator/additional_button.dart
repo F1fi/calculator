@@ -1,4 +1,5 @@
 import 'package:calculator/calculator/calculator_button.dart';
+import 'package:calculator/common/calculator_colors.dart';
 import 'package:calculator/models/additional_operation.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class AdditionalButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CalculatorButton(
-      color: Colors.grey,
+      color: CalculatorColors.additionalButton,
       onTap: onTap,
       text: type.getString(),
     );

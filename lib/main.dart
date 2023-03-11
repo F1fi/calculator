@@ -1,4 +1,5 @@
 import 'package:calculator/calculator/calculator.dart';
+import 'package:calculator/common/calculator_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return const Scaffold(
-      backgroundColor: Colors.white12,
+      backgroundColor: CalculatorColors.background,
       body: Calculator()
     );
   }

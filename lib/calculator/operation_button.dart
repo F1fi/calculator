@@ -1,4 +1,5 @@
 import 'package:calculator/calculator/calculator_button.dart';
+import 'package:calculator/common/calculator_colors.dart';
 import 'package:calculator/models/operation_type.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class OperationButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CalculatorButton(
-      color: isActive ? Colors.white10: Colors.orange,
+      color: isActive ? CalculatorColors.activeOperationButton : CalculatorColors.operationButton,
       onTap: () => onTap(type),
       text: type.getSymbol(),
     );
